@@ -18,7 +18,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'ruby_crawler'
+
+RubyCrawler.crawl('http://url.com')
+```
+
+By default the crawler prints the resulting sitemap to stdout but
+crawl takes an optional second argument for a file to write the
+results to.
+
+```ruby
+file = File.new('sitemap', 'w')
+
+RubyCrawler.crawl('http://url.com', file)
+```
+
+For debugging purposes:
+
+Set RubyCrawler::DEBUG to be something that responds to puts in
+order to see debug output
+
+e.g
+```ruby
+RubyCrawler::DEBUG = $stdout
+```
 
 ## Contributing
 

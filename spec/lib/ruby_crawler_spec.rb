@@ -36,7 +36,7 @@ describe RubyCrawler do
       )
     end
 
-    it 'adds the proper links' do
+    it 'adds the proper links and parses the new pages' do
       blank_page = %Q{
         <html><body></body></html>
       }
