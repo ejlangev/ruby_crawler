@@ -1,6 +1,6 @@
 # RubyCrawler
 
-TODO: Write a gem description
+A simple gem to crawl websites in ruby.  Just an example, not ready for hard core use.
 
 ## Installation
 
